@@ -1,0 +1,37 @@
+Description: switch test from ava to tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2019-12-12
+
+--- a/test.js
++++ b/test.js
+@@ -1,5 +1,5 @@
+-import test from 'ava';
+-import ipRegex from '.';
++const test = require('tape');
++const ipRegex = require('.');
+ 
+ const v4 = [
+ 	'0.0.0.0',
+@@ -343,6 +343,7 @@
+ 	for (const x of Object.keys(v6extract)) {
+ 		t.deepEqual(x.match(ipRegex()), v6extract[x]);
+ 	}
++	t.end();
+ });
+ 
+ test('ip v4', t => {
+@@ -373,6 +374,7 @@
+ 	for (const x of Object.keys(v4extract)) {
+ 		t.deepEqual(x.match(ipRegex.v4()), v4extract[x]);
+ 	}
++	t.end();
+ });
+ 
+ test('ip v6', t => {
+@@ -403,4 +405,5 @@
+ 	for (const x of Object.keys(v6extract)) {
+ 		t.deepEqual(x.match(ipRegex.v6()), v6extract[x]);
+ 	}
++	t.end();
+ });

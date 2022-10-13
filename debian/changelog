@@ -1,0 +1,66 @@
+node-ip-regex (4.3.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 4.3.0
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 26 Jan 2021 14:28:54 +0100
+
+node-ip-regex (4.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+  * Apply multi-arch hints.
+    + node-ip-regex: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 4.2.0
+  * Fix copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 14 Jan 2021 16:19:42 +0100
+
+node-ip-regex (4.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 16 Dec 2019 21:50:38 +0100
+
+node-ip-regex (4.1.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Manas Kashyap ]
+  * New upstream version 4.1.0
+  * Bump debhelper compatibiity level to 12
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use pkg-js-tools auto install
+  * Switch upstream test from ava to tape
+  * Enable upstream test
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 12 Dec 2019 21:16:18 +0100
+
+node-ip-regex (3.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump standards version to 4.1.4 (no changes)
+
+ -- Manas kashyap <manaskashyaptech@gmail.com>  Mon, 18 Jun 2018 23:32:55 +0000
+
+node-ip-regex (2.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #885616)
+
+ -- Manas kashyap <manaskashyaptech@gmail.com>  Fri, 29 Dec 2017 07:00:20 +0000
